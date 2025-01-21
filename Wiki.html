@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="wiki.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Wikipedia-logo-v2-en.svg" class="navbar-image" alt="" /></a>
+
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input type="text" class="user-input" id="userInput" placeholder="Search Wikipedia" />
+        <button onclick="searchWikipedia()">Search</button>
+        <a class="nav-link" href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Main+Page" target="_blank" id="navItem1">Create Account</a>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="https://www.wikipedia.org/" target="_blank" id="navItem1">
+                    Main Page
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-link" href="https://en.wikipedia.org/wiki/Wikipedia:Contents" target="_blank" id="navItem1">Contents</a>
+                <a class="nav-link" href="https://en.wikipedia.org/wiki/Portal:Current_events" target="_blank" id="navItem1">Current events</a>
+                <a class="nav-link" href="#" target="_blank" id="navItem1">Random article</a>
+                <a class="nav-link" href="#" target="_blank" id="navItem1">About Wikipedia</a>
+                <a class="nav-link" href="#" target="_blank" id="navItem1">Contact Us</a>
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container col-12">
+        <div class="container mt-5 pt-5 text-center">
+
+            <div class="card-body">
+                <h5 class="card-title">Welcome to Wikipedia</h5>
+
+                <p class="card-text">the <a class="nav-link" href="https://en.wikipedia.org/wiki/Encyclopedia" target="_blank" id="navItem1">free encyclopedia</a> that anyone can edit.</p>
+
+                <p class="card-text">6,829,577 articles in English</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="d-flex flex-row justify-content-center">
+        <div class="col-6 col-md-6">
+            <div class="favourite-place-card-container d-flex flex-row">
+
+                <div>
+                    <header class="header">From today's featured article</header>
+                    <p class="favourite-place-card-description">
+                        The siege of Guînes took place from May to July 1352 when a French army under Geoffrey de Charny unsuccessfully attempted to recapture the French castle (pictured) at Guînes which had been seized by the English the previous January. The siege was part of the Hundred Years' War and took place during the uneasy and ill-kept truce of Calais. The strongly fortified castle had been taken by the English during a period of nominal truce and the English king, Edward III, decided to keep it. After two months of fierce fighting,
+                        a large English night attack on the French camp inflicted a heavy defeat and the French withdrew.(
+                        <a class="nav-link" href="https://en.wikipedia.org/wiki/Siege_of_Gu%C3%AEnes_(1352)" target="_blank" id="navItem1">Full article...</a> )
+
+                    </p>
+                </div>
+                <img src="https://i.pinimg.com/originals/98/09/48/980948ae658423c60b0756eb0fae2ea7.jpg" class="card-image" />
+            </div>
+        </div>
+
+
+
+        <div class="col-6 col-md-6">
+            <div class="favourite-place-card-container d-flex flex-row">
+
+                <div>
+                    <header class="header">Did you know ...</header>
+                    <p class="favourite-place-card-description">
+                    <ul>
+                        <li> ... that <a class="nav-link" href="https://en.wikipedia.org/wiki/Aishwarya_Rai_Bachchan" target="_blank" id="navItem1">Aishwarya Rai Bachchan</a> (pictured) was the first Indian actress to be a juror at the Cannes Film Festival?</li>
+                        <li>... that Bruce Conner conceived of his short film Cosmic Ray as "presenting the eyes" for blind musician Ray Charles?</li>
+                        <li> ... that Giovanni Manu was the first player from his university ever to be selected in the NFL draft?</li>
+                        <li> ... that Barack Obama made an election promise to make non-emergency bills freely available online for a five-day public consultation period under "sunlight before signing"?</li>
+                        <li> ... that Bob Noel was the one responsible for dealing "with all the dirty laundry" of the Green Bay Packers?</li>
+                        <li> ... that 69 is "nice"?
+                    </ul>
+                    </p>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Aishwarya_Rai_Bachchan_attends_L%27Or%C3%A9al_Paris%27_latest_campaign_%28cropped%29.jpg" class="card-image" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="d-flex flex-row justify-content-center">
+        <div class="col-6 col-md-6">
+            <div class="favourite-place-card-container d-flex flex-row">
+
+                <div>
+                    <header class="header1">In the news</header>
+                    <p class="favourite-place-card-description">
+                    <ul>
+                        <li> Former U.S. president Donald Trump (pictured) is found guilty on all 34 counts of falsifying business records.</li>
+                        <li> In Indy car racing, Josef Newgarden wins the Indianapolis 500.</li>
+                        <li> In cricket, the Kolkata Knight Riders defeat <a class="nav-link" href="https://en.wikipedia.org/wiki/Sunrisers_Hyderabad" target="_blank" id="navItem1">Sun rises Hyderabad</a> to win the Indian Premier League.</li>
+                        <li> Gitanas Nausėda is re-elected as president of Lithuania.</li>
+                        <li> A landslide in Papua New Guinea's Enga Province leaves thousands of people missing and presumed dead. </li>
+
+                    </ul>
+                    </p>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Donald_Trump_with_model_of_Television_City.jpg" class="card-image" />
+            </div>
+        </div>
+
+
+
+        <div class="col-6 col-md-6">
+            <div class="favourite-place-card-container d-flex flex-row">
+
+                <div>
+                    <header class="header1">On this day</header>
+                    <p class="favourite-place-card-description">
+                    <ul>
+                        <li> Petronius Maximus, ruler of the <a class="nav-link" href="https://en.wikipedia.org/wiki/Western_Roman_Empire" target="_blank" id="navItem1">Western Roman Empire</a>, arrival of a Vandal force that sacked the city.</li>
+                        <li> Mongol invasion of Kievan Rus': Mongol forces defeated a Kievan Rus' army at the Kalka River .</li>
+                        <li> Cardinal Bessarion (pictured) announced his donation of 746 Greek and Latin codices to the Republic of Venice.</li>
+                        <li>An earthquake registering 7.7 Mw struck Balochistan in British India, now part of Pakistan, killing between 30,000 and 60,000 people</li>
+                        <li> ... that Bob Noel was the one responsible for dealing "with all the dirty laundry" of the Green Bay Packers?</li>
+                        <li> A tornado struck Central Oklahoma, killing 8 people and injuring more than 150</li>
+                    </ul>
+                    </p>
+                </div>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Bessarion_1476.JPG" class="card-image" />
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div>
+        <header class="header2">Wikipedia's sister projects</header>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="col-3 col-md-3">
+                <div class="top-section-card-container d-flex flex-row justify-content-start">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Wikimedia-logo.png" class="card1-image" />
+                    <div class="d-flex flex-column">
+                        <h1 class="heading">Commons</h1>
+                        <p class="paragraph">
+                            Free media repository
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-3 col-md-3">
+                <div class="top-section-card-container d-flex flex-row justify-content-start">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Mediawiki-logo-v3.png" class="card1-image" />
+                    <div class="d-flex flex-column">
+                        <h1 class="heading">Media Wiki</h1>
+                        <p class="paragraph">
+                            wiki software development
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-3 col-md-3">
+                <div class="top-section-card-container d-flex flex-row justify-content-start">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Kompass_de_NO.svg" class="card1-image" />
+                    <div class="d-flex flex-column">
+                        <h1 class="heading">Meta-Wiki</h1>
+                        <p class="paragraph">
+                            Wiki media project coordination
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-3 col-md-3">
+                <div class="top-section-card-container d-flex flex-row justify-content-start">
+                    <img src="https://upload.wikimedia.org/wikipedia/meta/4/40/Wikibooks_logo_world.svg" class="card1-image" />
+                    <div class="d-flex flex-column">
+                        <h1 class="heading">Wikibooks</h1>
+                        <p class="paragraph">
+                            Free textbooks and manuals
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="d-flex flex-row justify-content-center">
+        <div class="col-3 col-md-3">
+            <div class="top-section-card-container d-flex flex-row justify-content-start">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Wikidata-logo-v3.png" class="card1-image" />
+                <div class="d-flex flex-column">
+                    <h1 class="heading">wikidata</h1>
+                    <p class="paragraph">
+                        Free knowledge base
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-3 col-md-3">
+            <div class="top-section-card-container d-flex flex-row justify-content-start">
+                <img src="https://upload.wikimedia.org/wikipedia/meta/5/55/Wikinews_logo_wn.png" class="card1-image" />
+                <div class="d-flex flex-column">
+                    <h1 class="heading">Wikinews</h1>
+                    <p class="paragraph">
+                        Free-content news
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-3 col-md-3">
+            <div class="top-section-card-container d-flex flex-row justify-content-start">
+                <img src="https://upload.wikimedia.org/wikiquote/simple/e/ec/Simple_English_Wikiquote_logo3.png" class="card1-image" />
+                <div class="d-flex flex-column">
+                    <h1 class="heading">Wikiqoute</h1>
+                    <p class="paragraph">
+                        collection of qoutations
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-3 col-md-3">
+            <div class="top-section-card-container d-flex flex-row justify-content-start">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Wikisource-gold.svg" class="card1-image" />
+                <div class="d-flex flex-column">
+                    <h1 class="heading">Wikisource</h1>
+                    <p class="paragraph">
+                        Free-content library
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

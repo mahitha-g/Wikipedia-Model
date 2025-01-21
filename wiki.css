@@ -1,0 +1,38 @@
+.navbar-image {
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+}
+
+#navItem1 {
+    color: blue;
+    font-family: "Roboto";
+}
+
+.header {
+    background-color: #d1d10d;
+    font-size: bold;
+}
+
+.card-image {
+    height: 40px;
+}
+
+.header1 {
+    background-color: #3297a8;
+    font-size: bold;
+}
+
+.heading {
+    font-size: 29px;
+}
+
+.card1-image {
+    height: 40px;
+}
+
+
+.header2 {
+    background-color: #e39c0e;
+    font-size: bold;
+}
